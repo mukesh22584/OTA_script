@@ -13,11 +13,10 @@ def md5(fname):
 
 # constants
 donate_url = "https://www.paypal.me/rakeshbatra"
-website_url = "https://plus.google.com/communities/111037372581335961267"
-developer = "RakeshBatra"
-developer_url = "https://forum.xda-developers.com/member.php?u=5985430"
-forum_url= "https://forum.xda-developers.com/oneplus-3/oneplus-3--3t-cross-device-development/rom-coltos-t3808635"
-url= "https://sourceforge.net/projects/coltos/files/OP3_3T_Unified/"
+developer = "MukeshSingh"
+developer_url = "https://forum.xda-developers.com/member.php?u=5678679"
+forum_url= "https://forum.xda-developers.com/oneplus-5t/development/oos-cam-colt-enigma-t3901028"
+url= "https://sourceforge.net/projects/coltos/files/dumpling/"
 device = sys.argv[1]
 filename = "ColtOS-Enigma-4.1_OFFICIAL-" + time.strftime('%Y%m%d') + "-" + device + ".zip"
 zip_path = os.path.expanduser("~") + "/colt/out/target/product/" + device + "/"
