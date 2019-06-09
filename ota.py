@@ -18,13 +18,13 @@ developer_url = "https://forum.xda-developers.com/member.php?u=5678679"
 forum_url= "https://forum.xda-developers.com/oneplus-5t/development/oos-cam-colt-enigma-t3901028"
 url= "https://sourceforge.net/projects/coltos/files/dumpling/"
 device = sys.argv[1]
-filename = "ColtOS-Enigma-4.1_OFFICIAL-" + time.strftime('%Y%m%d') + "-" + device + ".zip"
+filename = "ColtOS-Enigma-4.3_OFFICIAL-" + time.strftime('%Y%m%d') + "-" + device + ".zip"
 zip_path = os.path.expanduser("~") + "/colt/out/target/product/" + device + "/"
 error = "false"
 
 ota_data = {}
 md5file = zip_path + filename + ".md5sum"
-changelog = zip_path + "ColtOS-Enigma-4.1_OFFICIAL-" + time.strftime('%Y%m%d') + "-" + device + "-Changelog.txt"
+changelog = zip_path + "ColtOS-Enigma-4.3_OFFICIAL-" + time.strftime('%Y%m%d') + "-" + device + "-Changelog.txt"
 
 # generate addons nested dict
 addons = {"addons":[]}
@@ -45,7 +45,6 @@ raw_changelog = io.open(changelog,"r", encoding="cp866").read()
 # fill json struct
 ota_data=addons
 ota_data["donate_url"] = donate_url
-ota_data["website_url"] = website_url
 ota_data["developer"] = developer
 ota_data["developer_url"] = developer_url
 ota_data["forum_url"] = forum_url
